@@ -12,13 +12,12 @@ namespace Cdek.Models
     /// </summary>
     public class ApplicationContext : DbContext
     {       
-        IConfiguration appConfig;
-
+        IConfiguration appConfig;        
         public ApplicationContext(IConfiguration config)
         {
             appConfig = config;
         }
-        
+
         public DbSet<Cargo> Cargos { get; set; } = null!;
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

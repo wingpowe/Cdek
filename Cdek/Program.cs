@@ -1,6 +1,7 @@
 
 
 using Cdek.Models;
+using static Cdek.Models.ApplicationContext;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,7 +12,6 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<ApplicationContext>();
-
 var app = builder.Build();
 
 

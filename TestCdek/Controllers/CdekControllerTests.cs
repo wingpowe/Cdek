@@ -55,7 +55,7 @@ namespace Cdek.Controllers.Tests
         }
 
         [Theory]
-        [InlineData("/Cdek/GetById/1")]
+        [InlineData("/Cdek/GetPriceById/1")]
         public async Task Get_By_Id(string url)
         {
             // Arrange

@@ -14,8 +14,6 @@ namespace Cdek.Models
         [Required] public double Length { get; set; }
         [Required] public string? FromLocation { get; set; }
         [Required] public string? ToLocation { get; set; }
-
     }
-
 }
 
